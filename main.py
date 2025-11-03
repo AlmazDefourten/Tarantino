@@ -140,6 +140,8 @@ import numpy as np
 from scipy.spatial.distance import cosine
 # Function to calculate cosine similarity
 def cosine_similarity(vec1, vec2):
+    if vec1 is None or vec2 is None:
+        return 0
     vec1 = np.array(vec1).flatten()
     vec2 = np.array(vec2).flatten()
     return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
