@@ -6,7 +6,7 @@ import requests
 import json
 
 # PyMuPDF Open the PDF file
-pdf_document = "path/to/your/document.pdf"
+pdf_document = "document.pdf"
 document = fitz.open(pdf_document)
 # Initialize a dictionary to hold the text for each page
 pdf_text = {}
