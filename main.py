@@ -3,6 +3,7 @@ import pandas as pd
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from rake_nltk import Rake
 import requests
+import numpy as np
 import json
 
 # PyMuPDF Open the PDF file
@@ -138,8 +139,10 @@ query_embeddings = get_embeddings(query_phrases)
 import numpy as np
 from scipy.spatial.distance import cosine
 # Function to calculate cosine similarity
-def cosine_similarity(embedding1, embedding2):
-    return 1 - cosine(embedding1, embedding2)
+def cosine_similarity(vec1, vec2):
+    vec1 = np.array(vec1).flatten()
+    vec2 = np.array(vec2).flatten()
+    return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 # Dictionary to store similarities
 chunk_similarities = {}
 # Calculate cosine similarity for each chunk
