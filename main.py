@@ -174,15 +174,16 @@ print("prompt: " + prompt)
 response = requests.post(
     "http://localhost:11434/api/chat",
     json={
-        "model": "qwen3-vl:4b",
+        "model": "qwen3-vl:8b",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
         ],
         "stream": False,
         "options": {
-            "temperature": 0.1,
-            "num_predict": 300
+            "num_predict": 1000,  # УВЕЛИЧЬ ДО 1000
+            "top_k": 40,
+            "top_p": 0.9
         }
     }
 )
