@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94044678-e524-4293-ae56-ae1e5d88675d" name="Changes" comment="add test pdf file">
+    <list default="true" id="94044678-e524-4293-ae56-ae1e5d88675d" name="Changes" comment="change model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -23,40 +23,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AlmazDefourten"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlmazDefourten&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AlmazDefourten/Tarantino.git",
-    "accountId": "5df9d5bb-b7a8-4c66-a81e-41956f484e78"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AlmazDefourten/Tarantino.git&quot;,
+    &quot;accountId&quot;: &quot;5df9d5bb-b7a8-4c66-a81e-41956f484e78&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="34wyZe9c4Zax0bSQgyAC1c2U1Zt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\almaz\PycharmProjects\Tarantino" />
@@ -77,7 +77,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762138985216</updated>
-      <workItem from="1762138986232" duration="3929000" />
+      <workItem from="1762138986232" duration="4654000" />
+      <workItem from="1762287378942" duration="595000" />
+      <workItem from="1762382895576" duration="12725000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -95,7 +97,167 @@
       <option name="project" value="LOCAL" />
       <updated>1762144460173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix embedding get">
+      <option name="closed" value="true" />
+      <created>1762146703372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762146703372</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix embedding get">
+      <option name="closed" value="true" />
+      <created>1762146814669</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762146814669</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add sleep for fix request spam">
+      <option name="closed" value="true" />
+      <created>1762391266509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762391266509</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix embedding api">
+      <option name="closed" value="true" />
+      <created>1762391684510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762391684510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test without sleep in embeddings">
+      <option name="closed" value="true" />
+      <created>1762392875472</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762392875472</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762393027279</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762393027279</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762396386430</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762396386430</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762396421631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762396421631</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762398098971</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762398098971</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762398592186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762398592186</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762401164826</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762401164826</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762401311288</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1762401311288</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test answer)">
+      <option name="closed" value="true" />
+      <created>1762401461880</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762401461880</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762404323577</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762404323577</updated>
+    </task>
+    <task id="LOCAL-00017" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762404431621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1762404431621</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762404587068</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1762404587068</updated>
+    </task>
+    <task id="LOCAL-00019" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762404684560</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1762404684560</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762404831737</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1762404831737</updated>
+    </task>
+    <task id="LOCAL-00021" summary="test logging">
+      <option name="closed" value="true" />
+      <created>1762405089446</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1762405089446</updated>
+    </task>
+    <task id="LOCAL-00022" summary="change model">
+      <option name="closed" value="true" />
+      <created>1762405659738</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1762405659738</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +266,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add test pdf file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test pdf file" />
+    <MESSAGE value="fix embedding get" />
+    <MESSAGE value="add sleep for fix request spam" />
+    <MESSAGE value="fix embedding api" />
+    <MESSAGE value="test without sleep in embeddings" />
+    <MESSAGE value="test answer)" />
+    <MESSAGE value="test logging" />
+    <MESSAGE value="change model" />
+    <option name="LAST_COMMIT_MESSAGE" value="change model" />
   </component>
 </project>
