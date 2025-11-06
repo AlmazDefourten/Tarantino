@@ -77,7 +77,8 @@ def get_embedding(phrase):
         responsee.raise_for_status()
 
         result = responsee.json()
-        print("query embedding" + result)
+        print("query embedding")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
         return result['embedding']
 
     except requests.exceptions.RequestException as e:
@@ -128,7 +129,7 @@ def get_embeddings(phrases):
             responsee = requests.post(url, json=data)
             responsee.raise_for_status()
             result = responsee.json()
-            print("phrase embedding" + result)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
             embeddingss.append(result['embedding'])
             time.sleep(1)
         except Exception as e:
