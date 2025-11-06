@@ -1,3 +1,5 @@
+import time
+
 import fitz
 import pandas as pd
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -73,6 +75,7 @@ def get_embedding(phrase):
     try:
         responsee = requests.post(url, json=data)
         responsee.raise_for_status()
+        time.sleep(1)
 
         result = responsee.json()
         return result['embedding']
@@ -128,6 +131,7 @@ def get_embeddings(phrases):
             responsee.raise_for_status()
             result = responsee.json()
             embeddingss.append(result['embedding'])
+            time.sleep(1)
         except Exception as e:
             print(f"Ошибка для фразы '{phrase}': {e}")
             embeddingss.append(None)
