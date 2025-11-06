@@ -107,7 +107,7 @@ def extract_phrases_from_query(query):
     rake.extract_keywords_from_text(query)
     return rake.get_ranked_phrases()
 # Example query
-query = "What are the results of the 2DRA algorithm?(This question should be based on your pdf)"
+query = "Что лиза делали с антоном?"
 # Extract phrases from the query
 query_phrases = extract_phrases_from_query(query)
 # Output query phrases
