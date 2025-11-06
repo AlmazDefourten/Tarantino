@@ -161,7 +161,7 @@ for (page, chunk_number), phrases in phrase_embeddings.items():
     # Average similarity for the chunk
     chunk_similarities[(page, chunk_number)] = average_similarity
 # Get top 5 chunks by similarity
-top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=True)[:1]
+top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=False)[:1]
 # Output top 5 chunks
 print("Top 5 most relatable chunks:")
 selected_chunks = []
