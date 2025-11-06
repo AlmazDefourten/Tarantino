@@ -77,6 +77,7 @@ def get_embedding(phrase):
         responsee.raise_for_status()
 
         result = responsee.json()
+        print(phrase)
         print("query embedding")
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return result['embedding']
