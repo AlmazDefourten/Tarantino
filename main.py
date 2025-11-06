@@ -182,8 +182,7 @@ response = requests.post(
         "stream": False,
         "options": {
             "num_predict": 1000,  # УВЕЛИЧЬ ДО 1000
-            "top_k": 40,
-            "top_p": 0.9
+            "temperature": 0.1,
         }
     }
 )
