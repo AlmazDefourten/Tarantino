@@ -65,7 +65,7 @@ def get_embedding(phrase):
     """Получение эмбеддингов через Ollama API"""
 
     # Ollama использует отдельный endpoint для эмбеддингов
-    url = "http://localhost:11434/api/embeddings"
+    url = "http://localhost:11434/api/embed"
 
     data = {
         "model": "nomic-embed-text",
@@ -189,7 +189,7 @@ response = requests.post(
         }
     }
 )
-
+response.raise_for_status()
 # Extract the answer from the response
 answer = response.json()['message']['content'].strip()
 # Output the answer
