@@ -80,10 +80,8 @@ def get_embedding(phrase):
         return result['embedding']
 
     except requests.exceptions.RequestException as e:
-        print(f"Ошибка запроса: {e}")
         return None
     except KeyError:
-        print("Ошибка: в ответе нет поля 'embedding'")
         return None
 # Dictionary to hold embeddings
 phrase_embeddings = {}
@@ -147,6 +145,7 @@ def cosine_similarity(vec1, vec2):
         return 0
     vec1 = np.array(vec1).flatten()
     vec2 = np.array(vec2).flatten()
+    print("similarity: " + np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2)))
     return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 # Dictionary to store similarities
 chunk_similarities = {}
@@ -154,6 +153,7 @@ chunk_similarities = {}
 for (page, chunk_number), phrases in phrase_embeddings.items():
     similarities = []
     for phrase, embedding in phrases:
+        print("phrase: " + phrase)
         phrase_similarities = [cosine_similarity(embedding, query_embedding) for query_embedding in query_embeddings]
         similarities.append(max(phrase_similarities))
     # Choose the highest similarity for each phrase
@@ -161,7 +161,7 @@ for (page, chunk_number), phrases in phrase_embeddings.items():
     # Average similarity for the chunk
     chunk_similarities[(page, chunk_number)] = average_similarity
 # Get top 5 chunks by similarity
-top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=False)[:1]
+top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=True)[:1]
 # Output top 5 chunks
 print("Top 5 most relatable chunks:")
 selected_chunks = []
