@@ -174,7 +174,7 @@ print("prompt: " + prompt)
 response = requests.post(
     "http://localhost:11434/api/chat",
     json={
-        "model": "gpt-oss:20b",
+        "model": "qwen3-vl:8b",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
