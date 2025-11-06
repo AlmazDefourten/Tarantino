@@ -107,7 +107,7 @@ def extract_phrases_from_query(query):
     rake.extract_keywords_from_text(query)
     return rake.get_ranked_phrases()
 # Example query
-query = "Выдели всех персонажей"
+query = "Чем занимались Антон и Лиза?"
 # Extract phrases from the query
 query_phrases = extract_phrases_from_query(query)
 # Output query phrases
