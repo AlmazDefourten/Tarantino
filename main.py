@@ -75,7 +75,6 @@ def get_embedding(phrase):
     try:
         responsee = requests.post(url, json=data)
         responsee.raise_for_status()
-        time.sleep(1)
 
         result = responsee.json()
         return result['embedding']
