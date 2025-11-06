@@ -189,5 +189,6 @@ response = requests.post(
 response.raise_for_status()
 # Extract the answer from the response
 answer = response.json()['message']['content'].strip()
+print(json.dumps(response.json(), indent=2, ensure_ascii=False))
 # Output the answer
 print(f"Answer:\n{answer}")
