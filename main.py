@@ -78,7 +78,6 @@ def get_embedding(phrase):
 
         result = responsee.json()
         print("query embedding")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
         return result['embedding']
 
     except requests.exceptions.RequestException as e:
@@ -129,7 +128,6 @@ def get_embeddings(phrases):
             responsee = requests.post(url, json=data)
             responsee.raise_for_status()
             result = responsee.json()
-            print(json.dumps(result, indent=2, ensure_ascii=False))
             embeddingss.append(result['embedding'])
             time.sleep(1)
         except Exception as e:
@@ -144,14 +142,6 @@ import numpy as np
 from scipy.spatial.distance import cosine
 # Function to calculate cosine similarity
 def cosine_similarity(vec1, vec2):
-    if vec1 is not None:
-        print("vec1: " + vec1)
-    else:
-        print("vec1: None")
-    if vec1 is not None:
-        print("vec2: " + vec2)
-    else:
-        print("vec2: None")
     if vec1 is None or vec2 is None:
         return 0
     vec1 = np.array(vec1).flatten()
