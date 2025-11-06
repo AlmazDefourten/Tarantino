@@ -172,6 +172,7 @@ for (page, chunk_number), similarity in top_chunks:
 
 context = "\n\n".join(selected_chunks)
 prompt = f"Answer the following query based on the provided text:\n\n{context}\n\nQuery: {query}\nAnswer:"
+print("prompt: " + prompt)
 # Use the Ollama API to get a response
 response = requests.post(
     "http://localhost:11434/api/chat",
