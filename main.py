@@ -107,7 +107,7 @@ def extract_phrases_from_query(query):
     rake.extract_keywords_from_text(query)
     return rake.get_ranked_phrases()
 # Example query
-query = "Антон?"
+query = "Выдели всех персонажей"
 # Extract phrases from the query
 query_phrases = extract_phrases_from_query(query)
 # Output query phrases
@@ -158,7 +158,7 @@ for (page, chunk_number), phrases in phrase_embeddings.items():
     # Average similarity for the chunk
     chunk_similarities[(page, chunk_number)] = average_similarity
 # Get top 5 chunks by similarity
-top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=True)[:1]
+top_chunks = sorted(chunk_similarities.items(), key=lambda x: x[1], reverse=True)[:5]
 # Output top 5 chunks
 print("Top 5 most relatable chunks:")
 selected_chunks = []
