@@ -65,7 +65,7 @@ def get_embedding(phrase):
     """Получение эмбеддингов через Ollama API"""
 
     # Ollama использует отдельный endpoint для эмбеддингов
-    url = "http://localhost:11434/api/embed"
+    url = "http://localhost:11434/api/embeddings"
 
     data = {
         "model": "nomic-embed-text",
@@ -77,7 +77,6 @@ def get_embedding(phrase):
         responsee.raise_for_status()
 
         result = responsee.json()
-        print(phrase)
         print("query embedding")
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return result['embedding']
