@@ -7,6 +7,7 @@ from rake_nltk import Rake
 import requests
 import numpy as np
 import json
+from scipy.spatial.distance import cosine
 
 # PyMuPDF Open the PDF file
 pdf_document = "document.pdf"
@@ -141,13 +142,8 @@ query_embeddings = get_embeddings(query_phrases)
 import numpy as np
 from scipy.spatial.distance import cosine
 # Function to calculate cosine similarity
-def cosine_similarity(vec1, vec2):
-    if vec1 is None or vec2 is None:
-        return 0
-    vec1 = np.array(vec1).flatten()
-    vec2 = np.array(vec2).flatten()
-    print("similarity: " + np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2)))
-    return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
+def cosine_similarity(embedding1, embedding2):
+    return 1 - cosine(embedding1, embedding2)
 # Dictionary to store similarities
 chunk_similarities = {}
 # Calculate cosine similarity for each chunk
